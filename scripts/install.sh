@@ -143,7 +143,7 @@ fi
 
 # --- 1.5 Prepare Playbooks (Fetch from Remote) ---
 echo -e "${GREEN}Fetching installation playbooks...${NC}"
-REPO_BASE="https://raw.githubusercontent.com/awanio/vapor/main"
+REPO_BASE="https://raw.githubusercontent.com/awanio/vapor-ce/main"
 CLONE_DIR="/tmp/vapor-installer-$$"
 mkdir -p "$CLONE_DIR"
 
