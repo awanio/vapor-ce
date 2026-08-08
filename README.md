@@ -55,7 +55,7 @@ The interactive installer uses Ansible to set up Vapor and optional components:
 
 ```bash
 # Download the install script
-curl -fsSL https://raw.githubusercontent.com/awanio/vapor/main/scripts/install.sh -o install.sh
+curl -fsSL https://raw.githubusercontent.com/awanio/vapor-ce/main/scripts/install.sh -o install.sh
 
 # Make it executable
 chmod +x install.sh
@@ -91,17 +91,17 @@ export K8S_VERSION=1.30
 # Note: when piping via bash, pass CLI args with -s --
 
 # Run installer (latest default)
-curl -fsSL https://raw.githubusercontent.com/awanio/vapor/main/scripts/install.sh | sudo -E bash
+curl -fsSL https://raw.githubusercontent.com/awanio/vapor-ce/main/scripts/install.sh | sudo -E bash
 
 # Run installer for a specific version
-curl -fsSL https://raw.githubusercontent.com/awanio/vapor/main/scripts/install.sh | sudo -E bash -s -- -v v0.1.1
+curl -fsSL https://raw.githubusercontent.com/awanio/vapor-ce/main/scripts/install.sh | sudo -E bash -s -- -v v0.1.1
 ```
 
 ### Building from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/awanio/vapor.git
+git clone https://github.com/awanio/vapor-ce.git
 cd vapor
 
 # Build (requires Go 1.21+ and Node.js 18+)
@@ -164,7 +164,7 @@ Default credentials are your system's root or sudo user credentials (PAM authent
 
 ```bash
 # Clone repository
-git clone https://github.com/awanio/vapor.git
+git clone https://github.com/awanio/vapor-ce.git
 cd vapor
 
 # Install dependencies
